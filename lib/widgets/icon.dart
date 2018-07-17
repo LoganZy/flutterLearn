@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learn/zyIcons.dart' as fly;
+import 'package:flutter_learn/utils/zyIcons.dart' as fly;
 
 void main(){
   runApp(new MaterialApp(
