@@ -4,18 +4,18 @@ import 'dart:convert';
 
 void main() {
   runApp(new MaterialApp(
-    home: MyApp(),
+    home: HttpConnect(),
   ));
 }
 
-class MyApp extends StatefulWidget {
+class HttpConnect extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     return MyAppState();
   }
 }
 
-class MyAppState extends State<MyApp> {
+class MyAppState extends State<HttpConnect> {
   User user;
 
   void getUserInfo(String userName) {

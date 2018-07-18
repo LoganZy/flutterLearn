@@ -3,10 +3,10 @@ import 'package:path_provider/path_provider.dart';
 import 'dart:async';
 import 'dart:io';
 void main() {
-  runApp(new MaterialApp(home: new MyApp()));
+  runApp(new MaterialApp(home: new FileOperator()));
 }
 
-class MyApp extends StatelessWidget {
+class FileOperator extends StatelessWidget {
   final _userNameController = new TextEditingController();
   final mFile=null;
 

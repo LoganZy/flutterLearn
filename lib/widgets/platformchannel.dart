@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 void main(){
-  runApp(new MaterialApp(home: MyApp(),));
+  runApp(new MaterialApp(home: PlatFormChannel(),));
 }
-class MyApp extends StatefulWidget{
+class PlatFormChannel extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget{
   }
 
 }
-class MyStateApp extends State<MyApp>{
+class MyStateApp extends State<PlatFormChannel>{
   var netChangeed = "网路连接状态";
   static const platform = const MethodChannel("com.zylaoshi.flutterlearn/android");
 

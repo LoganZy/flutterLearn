@@ -10,6 +10,14 @@ import 'widgets/icon.dart';
 import 'widgets/radio.dart';
 import 'widgets/dialog.dart';
 import 'login/login_page.dart';
+import 'widgets/animation.dart';
+import 'widgets/fileoperator.dart';
+import 'widgets/httpconnect.dart';
+import 'widgets/listviewandgridview.dart';
+import 'widgets/platformchannel.dart';
+import 'widgets/refreshandloadmore.dart';
+import 'login/login.dart';
+import 'widgets/preferences.dart';
 
 class MainContent extends StatefulWidget{
   @override
@@ -27,16 +35,25 @@ class MainContentState extends State<MainContent>{
     // TODO: implement initState
     super.initState();
     mlist.add(new ListItem("新建项目自带的demo", new MyApp()));
-    mlist.add(new ListItem("跳转intent", new IntentApp()));
     mlist.add(new ListItem("StatefulWidget", new MyHome()));
-    mlist.add(new ListItem("常用Layout", new LayoutApp()));
-    mlist.add(new ListItem("常用Layout1", new Layout1App()));
+    mlist.add(new ListItem("Layout常用", new LayoutApp()));
+    mlist.add(new ListItem("Layout1常用", new Layout1App()));
     mlist.add(new ListItem("dialog使用", new DialogApp()));
     mlist.add(new ListItem("Container布局的使用", new ContainerTestApp()));
     mlist.add(new ListItem("icon使用", new IconstestApp()));
     mlist.add(new ListItem("Checkbox的使用", new CheckBoxApp()));
     mlist.add(new ListItem("Radio类型布局的使用", new RadioApp()));
+    mlist.add(new ListItem("intent的跳转", new IntentApp()));
+    mlist.add(new ListItem("login登录", new LoginApp()));
+    mlist.add(new ListItem("Animation动画的使用", new AnimationApp()));
     mlist.add(new ListItem("login登录+动画", new LoginPage()));
+    mlist.add(new ListItem("GridView和ListView使用", new GridViewApp()));
+    mlist.add(new ListItem("下啦刷新+上推加载更多", new RefreshLoadApp()));
+    mlist.add(new ListItem("Preferences的使用", new PreferencesApp()));
+    mlist.add(new ListItem("FileOperator的操作", new FileOperator()));
+    mlist.add(new ListItem("Http网络访问使用", new HttpConnect()));
+    mlist.add(new ListItem("Android平台代码交互", new PlatFormChannel()));
+
 
   }
   @override
